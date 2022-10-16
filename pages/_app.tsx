@@ -1,7 +1,23 @@
-import '../styles/globals.css'
+import { Provider } from "use-http";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  const options = {
+    interceptors: {
+      request: async ({ options }) => {
+        return options;
+      },
+      response: async ({ response }) => {
+        return response;
+      },
+    },
+  };
 
-export default MyApp
+  return (
+    <Provider url={process.env.PUBLIC_API_URL} options={options}>
+      <Component {...pageProps} />
+    </Provider>
+  );
+};
+
+export default App;
