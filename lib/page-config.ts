@@ -5,9 +5,10 @@ interface PageConfig {
 }
 
 const Pages: PageConfig[] = [
-  { text: "Home", path: "/", show: true },
-  { text: "Posts", path: "/posts", show: true },
-  { text: "Post", path: "/post", show: false },
+  { text: "home", path: "/", show: true },
+  { text: "about", path: "/about", show: true },
+  { text: "posts", path: "/posts", show: true },
+  { text: "post", path: "/post", show: false },
 ];
 
 export type { PageConfig };
