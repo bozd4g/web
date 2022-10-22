@@ -1,5 +1,6 @@
 import Content from "../components/content";
 import Layout from "../components/layout";
+import Social from "../components/social";
 import Text from "../components/typography";
 
 const AboutPage = () => {
@@ -10,7 +11,7 @@ const AboutPage = () => {
           variant="h1"
           className="pt-10 tracking-normal text-zinc-800 max-w-2xl"
         >
-          I am Furkan Bozdag. I live in the Berlin, Germany which is multicultural city.
+          I live in the Berlin, Germany which is multicultural city.
         </Text>
         <Text variant="p" className="mt-6 text-base text-zinc-600 max-w-2xl">
           I am a software engineer based in Berlin, Germany and Istanbul,
@@ -25,6 +26,8 @@ const AboutPage = () => {
         <Text variant="p" className="mt-4 text-base text-zinc-600 max-w-2xl">
           Do you wanna meet with me? You can find me on;
         </Text>
+
+        <Social />
       </Content>
     </Layout>
   );

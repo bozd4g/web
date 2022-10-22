@@ -1,5 +1,6 @@
 import Content from "../components/content";
 import Layout from "../components/layout";
+import Social from "../components/social";
 import Text from "../components/typography";
 
 const Index = () => {
@@ -12,12 +13,14 @@ const Index = () => {
         >
           Software Engineer, Bibliophile and Designer.
         </Text>
-        <Text variant="p" className="mt-6 text-base text-zinc-600 max-w-2xl">
+        <Text variant="p" className="mt-10 text-base text-zinc-600 max-w-2xl">
           He is Furkan, a software engineer based in Berlin, Germany and Istanbul, Turkey.
         </Text>
         <Text variant="p" className="text-base text-zinc-600 max-w-2xl">
           I am writing some blog posts about software engineering and other topics. Also creating some open source projects to share my knowledge with the community.
         </Text>
+
+        <Social />
       </Content>
     </Layout>
   );
