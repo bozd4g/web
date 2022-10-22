@@ -6,9 +6,9 @@ interface PageConfig {
 
 const Pages: PageConfig[] = [
   { text: "home", path: "/", show: true },
-  { text: "about", path: "/about", show: false },
-  { text: "posts", path: "/posts", show: false },
-  { text: "bookmarks", path: "/bookmarks", show: false },
+  { text: "about", path: "/about", show: true },
+  { text: "bookmarks", path: "/bookmarks", show: true },
+  { text: "posts", path: "/posts", show: true },
   { text: "post", path: "/post", show: false },
 ];
 

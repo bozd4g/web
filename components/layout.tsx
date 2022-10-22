@@ -38,7 +38,7 @@ const Layout = ({ title, children }: LayoutProps) => {
         </div>
       </div>
 
-      <div>
+      <div className="relative">
         <Header />
 
         <main className="pt-20 flex-grow sm:pt-40">
