@@ -1,23 +1,19 @@
 import clx from "classnames";
 import React from "react";
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  as?: string;
+interface Props {
   children: React.ReactNode;
+  className?: string;
+  innerClassName?: string;
 }
 
-const Content: React.FC<Props> = ({
-  as = "div",
-  children,
-  className,
-  ...props
-}: Props) => {
-  const cls = "mx-auto max-w-2xl lg:max-w-5xl";
-
-  return React.createElement(
-    as,
-    { className: clx(cls, className), ...props },
-    children
+const Content = ({ children, className, innerClassName }: Props) => {
+  return (
+    <div className={clx("mx-auto max-w-2xl lg:max-w-5xl", className)}>
+      <div className={clx("relative px-4 sm:px-8 lg:px-12", innerClassName)}>
+        {children}
+      </div>
+    </div>
   );
 };
 

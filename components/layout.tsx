@@ -38,10 +38,10 @@ const Layout = ({ title, children }: LayoutProps) => {
         </div>
       </div>
 
-      <div className="relative">
+      <div>
         <Header />
 
-        <main className="mt-10 flex-grow sm:mt-20">
+        <main className="pt-20 flex-grow sm:pt-40">
           <AnimatePresence exitBeforeEnter>
             <motion.div
               initial={{ y: 5, opacity: 0 }}
