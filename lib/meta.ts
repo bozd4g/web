@@ -9,7 +9,7 @@ const MetaConfig = {
     twitter: "https://twitter.com/bozd4g",
     medium: "https://medium.com/@bozd4g",
     github: "https://github.com/bozd4g",
-    superpeer: "https://superpeer.com/bozd4g",
+    linkedin: "https://linkedin.com/in/bozd4g",
   },
 };
 
