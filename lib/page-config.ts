@@ -9,6 +9,7 @@ const Pages: PageConfig[] = [
   { text: "about", path: "/about", show: true },
   { text: "bookmarks", path: "/bookmarks", show: true },
   { text: "posts", path: "/posts", show: true },
+  { text: "projects", path: "/projects", show: true },
   { text: "post", path: "/post", show: false },
 ];
 
