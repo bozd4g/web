@@ -5,17 +5,18 @@ import Footer from "./footer";
 import Header from "./header";
 
 interface LayoutProps {
+  title?: string;
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ title, children }: LayoutProps) => {
   return (
     <>
       <Head>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>{meta.title}</title>
+        <title>{(title ? `${title} | ` : '') + meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={meta.url} />
 
