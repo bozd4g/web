@@ -3,7 +3,6 @@ import React from "react";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   as?: string;
-  size?: "default" | "large";
   children: React.ReactNode;
 }
 
