@@ -12,7 +12,7 @@ const Index = () => {
         >
           Software Engineer, Bibliophile and Designer.
         </Text>
-        <Text variant="p" className="mt-6 text-base text-zinc-600">
+        <Text variant="p" className="mt-6 text-base text-zinc-600 max-w-3xl">
           I am Furkan, a software engineer based in Berlin, Germany and Istanbul, Turkey.
           I am writing some blog posts about software engineering and other topics. Also I am creating some open source projects to share my knowledge with the community.
         </Text>
