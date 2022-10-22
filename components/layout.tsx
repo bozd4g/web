@@ -5,7 +5,7 @@ import Footer from "./footer";
 import Header from "./header";
 
 interface LayoutProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -30,10 +30,16 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:url" content={meta.url} />
       </Head>
-      
-      <div className="flex min-h-screen flex-col pt-10 pb-14">
+
+      <div className="fixed inset-0 flex justify-center sm:px-8">
+        <div className="flex w-full max-w-7xl lg:px-8">
+          <div className="w-full bg-white ring-1 ring-zinc-100"></div>
+        </div>
+      </div>
+
+      <div className="relative">
         <Header />
-        
+
         <main className="mt-10 flex-grow sm:mt-20">
           <AnimatePresence exitBeforeEnter>
             <motion.div
@@ -46,7 +52,7 @@ const Layout = ({ children }: LayoutProps) => {
             </motion.div>
           </AnimatePresence>
         </main>
-        
+
         <Footer />
       </div>
     </>

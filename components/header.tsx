@@ -10,7 +10,7 @@ const Header = () => {
   const currentPath = split[split.length - 1];
 
   return (
-    <header>
+    <header className="pointer-events-none relative z-50 flex flex-col pt-10">
       <Container>
         <div className="mx-auto max-w-2xl lg:max-w-5xl">
           <div className="flex flex-1 justify-end md:justify-center">
