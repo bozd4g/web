@@ -17,7 +17,7 @@ const social = [
   {
     name: "twitter",
     Icon: TwitterIcon,
-    href: MetaConfig.social.linkedin,
+    href: MetaConfig.social.twitter,
   },
   {
     name: "linkedIn",
