@@ -1,6 +1,6 @@
 const MetaConfig = {
   title: "furkan bozdag",
-  description: "Software Engineer, Bibliophile and Enthusiastic. I write blog posts about software engineering and other topics I am passionate about. Also creating some open source projects to share my knowledge with the community.",
+  description: "Software Engineer, Bibliophile and Enthusiastic. I write blog posts about engineering and other topics I am passionate about. Also creating some open source projects to share my knowledge with the community.",
   url: "https://bozdag.dev",
   analytics: "UA-127177068-2",
   social: {

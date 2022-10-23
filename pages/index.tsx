@@ -17,9 +17,9 @@ const Index = () => {
           Hey, it's Furkan 👋
         </Text>
         <Text variant="p" className="mt-2 text-base text-zinc-600 max-w-2xl">
-          I write blog posts about software engineering and other topics I am
-          passionate about. Also creating some open source projects to share my
-          knowledge with the community.
+          I write blog posts about software and other topics I am passionate
+          about. Also creating some open source projects to share my knowledge
+          with the community.
         </Text>
 
         <Social />

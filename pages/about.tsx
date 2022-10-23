@@ -15,8 +15,8 @@ const AboutPage = () => {
         </Text>
         <Text variant="p" className="mt-6 text-base text-zinc-600 max-w-2xl">
           I am a software engineer based in Berlin, Germany and Istanbul,
-          Turkey. I am writing some blog posts about software engineering and
-          other topics. Also I am creating some open source projects to share my
+          Turkey. I am writing some blog posts about engineering and other
+          topics. Also I am creating some open source projects to share my
           knowledge with the community.
         </Text>
         <Text variant="p" className="mt-4 text-base text-zinc-600 max-w-2xl">
