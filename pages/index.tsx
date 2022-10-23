@@ -11,7 +11,7 @@ const Index = () => {
           variant="h1"
           className="pt-10 tracking-normal text-zinc-800 max-w-2xl"
         >
-          Software Engineer, Bibliophile and Designer.
+          Software Engineer, Bibliophile and Enthusiastic.
         </Text>
         <Text variant="p" className="mt-10 text-base text-zinc-600 max-w-2xl">
           Hey, it's Furkan 👋
