@@ -1,26 +1,14 @@
-import { useEffect, useState } from "react";
+import useSWR from "swr";
 import Bookmark from "../components/bookmark";
 import Content from "../components/content";
 import Layout from "../components/layout";
 import Text from "../components/typography";
 import { BookmarkDto } from "../lib/raindrop";
 
+const bookmarkFetcher = () => fetch("/api/bookmarks").then((res) => res.json());
+
 const BookmarksPage = () => {
-  const [bookmarks, setBookmarks] = useState([]);
-
-  useEffect(() => {
-    const fetchBookmarks = async () => {
-      const response = await fetch("/api/bookmarks");
-      const data = await response.json();
-      setBookmarks(data || []);
-    };
-
-    fetchBookmarks().catch(() => {
-      console.error("Failed to fetch bookmarks");
-      setBookmarks([]);
-    });
-  }, []);
-
+  const { data, error } = useSWR("/api/bookmarks", bookmarkFetcher);
   return (
     <Layout title="bookmarks">
       <Content>
@@ -38,15 +26,20 @@ const BookmarksPage = () => {
           can see and be inspired too.
         </Text>
 
-        {bookmarks.map((bookmark: BookmarkDto) => (
-          <Bookmark
-            key={bookmark._id}
-            title={bookmark.title}
-            description={bookmark.excerpt}
-            date={new Date(bookmark.created)}
-            link={bookmark.link}
-          />
-        ))}
+        {error && <div>Failed to load</div>}
+        {!data ? (
+          <div>Loading...</div>
+        ) : (
+          data.map((bookmark: BookmarkDto) => (
+            <Bookmark
+              key={bookmark._id}
+              title={bookmark.title}
+              description={bookmark.excerpt}
+              date={new Date(bookmark.created)}
+              link={bookmark.link}
+            />
+          ))
+        )}
       </Content>
     </Layout>
   );
