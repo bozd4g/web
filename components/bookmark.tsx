@@ -32,7 +32,7 @@ const Bookmark = ({ title, description, link, date }: Props) => {
         </span>
         {moment(date).format("DD MMMM YYYY")}
       </time>
-      <p className="relative z-10 mt-2 text-sm text-zinc-600">{description}</p>
+      {description && <p className="relative z-10 mt-2 text-sm text-zinc-600">{description}</p>}
     </article>
   );
 };
