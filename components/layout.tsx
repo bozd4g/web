@@ -16,7 +16,7 @@ const Layout = ({ title, children }: LayoutProps) => {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>{(title ? `${title} | ` : '') + meta.title}</title>
+        <title>{meta.title + (title ? ` | ${title}` : '')}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={meta.url} />
 

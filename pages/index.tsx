@@ -2,10 +2,11 @@ import Content from "../components/content";
 import Layout from "../components/layout";
 import Social from "../components/social";
 import Text from "../components/typography";
+import MetaConfig from "../lib/meta";
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout title={MetaConfig.shortDescription.toLowerCase()}>
       <Content>
         <Text
           variant="h1"
