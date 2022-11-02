@@ -30,15 +30,15 @@ const BookmarksPage = () => {
           can see and be inspired too.
         </Text>
 
-        {error && <p>Failed to load.</p>}
-        {!data ? (
+        {error && <p className="mt-5">Failed to load bookmarks.</p>}
+        {!error && !data ? (
           <Spinner layout="center" />
         ) : (
-          <div className="mt-[3em]">
+          <div>
             {Object.keys(grouppedData).map((key) => {
               const bookmarks = grouppedData[key];
               return (
-                <div key={key} className="flex flex-col gap-8">
+                <div key={key} className="flex flex-col gap-8 mt-[3em]">
                   <Text variant="h3" className="text-zinc-800 font-normal">
                     {key}
                   </Text>
