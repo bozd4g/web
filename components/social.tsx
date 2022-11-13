@@ -47,7 +47,7 @@ interface Props {
 
 const Social = ({ className }: Props) => {
   return (
-    <div className={clx("mt-10 flex gap-6", className)}>
+    <div className={clx("flex gap-6", className)}>
       {social.map((item) => {
         return (
           <Link key={item.name} href={item.href} about={item.name}>
@@ -65,4 +65,5 @@ const Social = ({ className }: Props) => {
   );
 };
 
+export type { Props };
 export default Social;

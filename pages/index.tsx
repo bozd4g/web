@@ -23,7 +23,7 @@ const Index = () => {
           with the community.
         </Text>
 
-        <Social />
+        <Social className="mt-10" />
       </Content>
     </Layout>
   );

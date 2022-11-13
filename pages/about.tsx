@@ -27,7 +27,7 @@ const AboutPage = () => {
           Do you wanna meet with me? You can find me on;
         </Text>
 
-        <Social />
+        <Social className="mt-10" />
       </Content>
     </Layout>
   );
