@@ -8,8 +8,8 @@ import Spinner from "../components/spinner";
 import Text from "../components/typography";
 import { BookmarkDto } from "../lib/raindrop";
 
-const fetcher = async () => {
-  const response = await fetch("/api/bookmarks");
+const fetcher = async (url) => {
+  const response = await fetch(url);
   const data = await response.json();
   if(response.ok) {
     return data;
