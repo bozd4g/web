@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Provider } from "use-http";
 import "../styles/globals.css";
 
@@ -14,9 +15,12 @@ const App = ({ Component, pageProps }) => {
   };
 
   return (
-    <Provider url={process.env.PUBLIC_API_URL} options={options}>
-      <Component {...pageProps} />
-    </Provider>
+    <>
+      <Provider url={process.env.PUBLIC_API_URL} options={options}>
+        <Component {...pageProps} />
+      </Provider>
+      <Analytics />
+    </>
   );
 };
 
