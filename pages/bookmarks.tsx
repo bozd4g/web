@@ -8,10 +8,18 @@ import Spinner from "../components/spinner";
 import Text from "../components/typography";
 import { BookmarkDto } from "../lib/raindrop";
 
-const bookmarkFetcher = () => fetch("/api/bookmarks").then((res) => res.json());
+const fetcher = async () => {
+  const response = await fetch("/api/bookmarks");
+  const data = await response.json();
+  if(response.ok) {
+    return data;
+  }
+
+  throw new Error(data.error);
+}
 
 const BookmarksPage = () => {
-  const { data, error } = useSWR("/api/bookmarks", bookmarkFetcher);
+  const { data, error } = useSWR("/api/bookmarks", fetcher);
   const grouppedData = _.groupBy(data, (item: BookmarkDto) =>
     moment(item.created).format("MMMM YYYY")
   );

@@ -21,7 +21,7 @@ class Raindrop {
         this.urlBuilder = new RaindropUrlBuilder();
     }
 
-    public async getBookmars(page: number = 0): Promise<CollectionDto> {
+    public async getBookmars(page: number = 0): Promise<Response> {
         const url = this.urlBuilder
             .setCollectionId(27989692)
             .setPerPage(50)
@@ -34,7 +34,7 @@ class Raindrop {
             }
         });
 
-        return await response.json();
+        return response;
     }
 }
 
