@@ -1,6 +1,4 @@
-import { Partytown } from "@builder.io/partytown/react";
 import NextDocument, { Head, Html, Main, NextScript } from "next/document";
-import MetaConfig from "../lib/meta";
 
 class Document extends NextDocument {
   static getInitialProps(ctx) {
@@ -39,28 +37,6 @@ class Document extends NextDocument {
           />
           <meta content="#fff" name="theme-color" />
           <meta content="#fff" name="msapplication-TileColor" />
-
-          <Partytown
-            debug={process.env.NODE_ENV !== "production"}
-            forward={["dataLayer.push"]}
-          />
-
-          <script
-            type="text/partytown"
-            src={`https://www.googletagmanager.com/gtag/js?id=${MetaConfig.analytics}`}
-            async
-          />
-
-          <script
-            type="text/partytown"
-            dangerouslySetInnerHTML={{
-              __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', '${MetaConfig.analytics}');`,
-            }}
-          />
         </Head>
 
         <body className="flex h-full flex-col bg-zinc-50">

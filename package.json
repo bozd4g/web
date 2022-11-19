@@ -20,7 +20,6 @@
     "use-http": "^1.0.27"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.7.1",
     "@types/node": "18.7.23",
     "@types/react": "^18.0.21",
     "autoprefixer": "^10.4.12",
