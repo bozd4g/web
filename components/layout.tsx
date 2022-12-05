@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 import meta from "../lib/meta";
 import Footer from "./footer";
-import Header from "./header";
 
 interface LayoutProps {
   title?: string;
@@ -39,7 +38,7 @@ const Layout = ({ title, children }: LayoutProps) => {
       </div>
 
       <div className="relative mb-20">
-        <Header />
+        {/* <Header /> */}
 
         <main className="pt-20 flex-grow sm:pt-40">
           <AnimatePresence exitBeforeEnter>
