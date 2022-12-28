@@ -4,7 +4,7 @@ import Social from "../components/social";
 const HomePage = () => {
     return (
         <main className="w-full">
-            <div className="m-16 w-1/2 sm:max-w-">
+            <div className="relative w-full p-8 lg:w-1/2 lg:p-16">
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <h1 className="font-sans text-5xl text-zinc-800">Hey, I am Furkan 👋</h1>
                 <h1 className="font-sans text-5xl mt-2 text-zinc-800">Software Engineer, Bibliophile and Enthusiastic.</h1>
