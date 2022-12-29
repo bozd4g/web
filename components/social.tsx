@@ -51,7 +51,7 @@ const Social = ({className}: Props) => {
             {social.map((item) => {
                 return (
                     <Link key={item.name} href={item.href} about={item.name} target="_blank">
-                        <item.Icon height={36} width={36} fill="#52525b"/>
+                        <item.Icon height={24} width={24} fill="#52525b"/>
                     </Link>
                 );
             })}
