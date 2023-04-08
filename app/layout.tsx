@@ -1,14 +1,13 @@
-import './globals.css'
-import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import "./globals.css";
 
-const RootLayout = ({children}: { children: React.ReactNode }) => (
-    <html lang="en">
-    <Header/>
-    <body>{children}</body>
-    <Footer/>
-    </html>
-)
+import Footer from "../components/footer";
+import Header from "../components/header";
+import React from "react";
+
+const RootLayout = ({children}: {children: React.ReactNode}) => (
+	<html lang="en">
+		<body>{children}</body>
+	</html>
+);
 
 export default RootLayout;
