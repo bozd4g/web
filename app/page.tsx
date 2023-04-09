@@ -9,8 +9,8 @@ const HomePage = () => {
 			<Noise />
 			<div className="absolute top-0 left-0 h-full w-full">
 				<div className="h-screen flex flex-col justify-center items-center">
+					<Hello />
 					<div>
-						<Hello />
 						<About className="mt-7" />
 						<Social className="mt-7 opacity-70" fill="white" />
 					</div>
