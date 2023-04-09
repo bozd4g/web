@@ -5,7 +5,7 @@ import Social from "../components/social";
 
 const HomePage = () => {
 	return (
-		<div className="h-screen bg-gray-800">
+		<div className="h-screen bg-[#151515]">
 			<Noise />
 			<div className="absolute top-0 left-0 h-full w-full">
 				<div className="h-screen flex flex-col justify-center items-center">
