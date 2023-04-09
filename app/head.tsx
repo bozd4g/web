@@ -2,7 +2,7 @@ import MetaConfig from "../lib/meta";
 
 const Head = () => (
 	<>
-		<title>{`${MetaConfig.title} | ${MetaConfig.shortDescription.toLowerCase()}`}</title>
+		<title>{`${MetaConfig.title.toLowerCase()} | ${MetaConfig.shortDescription.toLowerCase()}`}</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<meta name="description" content={MetaConfig.description} />
 		<meta charSet="utf-8" />
