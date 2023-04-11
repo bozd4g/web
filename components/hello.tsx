@@ -6,8 +6,8 @@ const Hello = () => {
 			<h3 className="text-white">
 				<i>Hello, my name is</i>
 			</h3>
-			<h1 className="text-white -mt-5">
-				<b>{MetaConfig.title}</b>
+			<h1 className="text-white text-center -mt-5">
+				<b>Furkan</b>
 			</h1>
 		</div>
 	);
