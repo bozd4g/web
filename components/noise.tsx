@@ -119,7 +119,7 @@ const Noise = ({className}: Props) => {
 		reset();
 	}, []);
 
-	return <canvas id="noise" ref={canvasRef} className={clx("pointer-events-none opacity-80", className)} />;
+	return <canvas id="noise" ref={canvasRef} className={clx("pointer-events-none", className)} />;
 };
 
 export default Noise;
