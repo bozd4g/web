@@ -6,7 +6,7 @@ interface Props {
 
 const About = ({className}: Props) => {
 	return (
-		<div className={clx("max-w-lg text-white opacity-70", className)}>
+		<div className={clx("max-w-lg text-white opacity-70 text-2xl", className)}>
 			<p>Hello 👋</p>
 		</div>
 	);

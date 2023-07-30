@@ -8,7 +8,7 @@ const HomePage = () => {
 				<div className="h-screen flex flex-col justify-center items-center">
 					<div>
 						<About />
-						<Social className="mt-1 opacity-70" fill="white" />
+						<Social className="mt-4 opacity-70" fill="white" />
 					</div>
 				</div>
 			</div>
