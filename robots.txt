@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bozdag.dev/sitemap.xml
