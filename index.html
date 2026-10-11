@@ -243,13 +243,17 @@
         transition: color 0.15s, rotate 0.25s ease;
       }
 
-      .link:hover::after, .link:focus-visible::after {
+      .link:focus-visible::after, .link:active::after {
         color: var(--hover);
         translate: 2px -2px;
       }
-      .theme:hover svg, .theme:focus-visible svg {
+      .theme:focus-visible svg, .theme:active svg {
         color: var(--hover);
         rotate: 25deg;
+      }
+      @media (hover: hover) {
+        .link:hover::after { color: var(--hover); translate: 2px -2px; }
+        .theme:hover svg { color: var(--hover); rotate: 25deg; }
       }
 
       .links {
@@ -273,6 +277,22 @@
     }
     ::view-transition-old(root) { z-index: 1; }
     ::view-transition-new(root) { z-index: 2; }
+
+    /* phones: keep the single row, just scale it so all five links fit */
+    @media (max-width: 30rem) {
+      footer { flex-direction: column; align-items: stretch; gap: 0.25rem; }
+      .links {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0 0.5rem;
+      }
+      .link { gap: 0.25rem; font-size: 0.6875rem; padding-block: 0.7rem; }
+    }
+
+    @media (pointer: coarse) {
+      .theme { min-height: 2.75rem; padding-inline: 0.5rem; margin-inline-end: -0.5rem; }
+    }
 
     @media (prefers-reduced-motion: reduce) {
       .statement { transition: none; }
