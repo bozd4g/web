@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#1c1d20" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#f6f6f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f2f3f5" media="(prefers-color-scheme: light)" />
   <title>furkan bozdağ | software crafter in berlin</title>
   <meta name="description" content="furkan bozdağ is a software crafter, coffee addict and part-time gamer building at delivery hero in berlin, germany." />
   <meta name="author" content="furkan bozdağ" />
@@ -143,7 +143,7 @@
       :root[data-theme="light"] { color-scheme: light; }
       :root[data-theme="dark"]  { color-scheme: dark; }
 
-      html { -webkit-text-size-adjust: 100%; }
+      html { -webkit-text-size-adjust: 100%; background: var(--bg); }
 
       body {
         min-height: 100dvh;
@@ -338,7 +338,7 @@
     const SUN = icon('<circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2M12 20.5v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1.5 12h2M20.5 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>');
     const MOON = icon('<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>');
 
-    const THEME_COLORS = { dark: '#1c1d20', light: '#f6f6f7' };
+    const THEME_COLORS = { dark: '#141619', light: '#f2f3f5' };
     function syncThemeColor() {
       if (!root.dataset.theme) return;
       document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
